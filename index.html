@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walk Reminder App</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        #progress-container { width: 100%; background: #ccc; height: 20px; margin-top: 10px; }
+        #progress-bar { width: 0%; height: 100%; background: green; }
+        button { margin-top: 10px; padding: 10px 20px; }
+      </style>
+</head>
+<body>
+    <h1>Walk Reminder App</h1>
+  <div id="timer">Next Walk Reminder In: 60:00</div>
+  <div>
+    <button id="update-walk">Update Walk Distance</button>
+  </div>
+  <div id="walk-status">Walked: 0 / 0.25 miles</div>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  <audio id="alarm-sound" src="alarm.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
